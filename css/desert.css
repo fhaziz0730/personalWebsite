@@ -1,0 +1,122 @@
+/* Desert Theme Styles */
+:root {
+    --desert-sand: #F4A259;
+    --desert-amber: #E9C46A;
+    --desert-coral: #F46036;
+    --desert-brown: #5D4037;
+    --desert-light-brown: #8D6E63;
+    --desert-white: #FFF9F0;
+    --desert-dark: #3E2723;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--desert-white);
+    color: var(--desert-dark);
+    line-height: 1.6;
+}
+
+.desert-header {
+    background-color: var(--desert-brown);
+    color: var(--desert-white);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.desert-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.desert-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.desert-header nav a {
+    color: var(--desert-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.desert-header nav a:hover {
+    color: var(--desert-amber);
+}
+
+.desert-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.desert-section h2 {
+    color: var(--desert-brown);
+    border-bottom: 2px solid var(--desert-sand);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-card {
+    background-color: var(--desert-light-brown);
+    border: 1px solid var(--desert-sand);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: var(--desert-amber);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: var(--desert-dark);
+}
+
+.project-card p {
+    color: var(--desert-white);
+}
+
+.project-card a {
+    color: var(--desert-white);
+    text-decoration: none;
+    background-color: var(--desert-coral);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: var(--desert-sand);
+}
+
+.desert-footer {
+    background-color: var(--desert-dark);
+    color: var(--desert-white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .desert-header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .desert-section {
+        padding: 1rem;
+    }
+}
