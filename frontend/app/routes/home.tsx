@@ -1,9 +1,5 @@
 import type { Route } from "./+types/home";
 
-export function loader() {
-  return { name: "React Router" };
-}
-
 export default function Home({ loaderData }: Route.ComponentProps) {
   return (
     <div>
@@ -19,14 +15,17 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           />
         </a>
       </div>
-      <div className="text-center p-4">
-        <h1 className="text-2xl">Hello, {loaderData.name}</h1>
-        <a
-          className="block mt-2 text-blue-500 underline hover:text-blue-600"
-          href="https://reactrouter.com/docs"
-        >
-          React Router Docs
-        </a>
+      <div className="flex justify-around bg-orange-200">
+        <div className="flex-col justify-start text-left p-4">
+          <h1 className="text-9xl/relaxed transition-opacity duration-500 ease-in-out font-serif">
+            HEY,
+            <br />
+            I'M
+            <br />
+            FAIYAZ AZIZ
+          </h1>
+        </div>
+        <div></div>
       </div>
     </div>
   );
