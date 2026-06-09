@@ -17,7 +17,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
       </div>
       <div className="flex justify-around bg-orange-200">
         <div className="flex-col justify-start text-left p-4">
-          <h1 className="text-9xl/relaxed transition-opacity duration-500 ease-in-out font-serif">
+          <h1 className="text-9xl/relaxed transition-opacity duration-500 ease-in-out font-display">
             HEY,
             <br />
             I'M
@@ -25,7 +25,13 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             FAIYAZ AZIZ
           </h1>
         </div>
-        <div></div>
+        <div className="flex-col justify-center">
+          <img
+            className="h-100 object-contain"
+            src="../public/headshot.jpg"
+            alt="Faiyaz Aziz headshot"
+          />
+        </div>
       </div>
     </div>
   );
